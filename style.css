@@ -11,7 +11,7 @@ html{
 }
 
 :root{
-    --blue: #24a693;
+    --green: #24a693;
 }
 /***** Navbar Section Starts ******/
 
@@ -34,14 +34,14 @@ a{
     color: aliceblue;
 }
 .logo::first-letter{
-    color: var(--blue);
+    color: var(--green);
 }
 nav ul a{
     margin-right: 50px;
 }
 
 nav ul a:hover{
-    color: var(--blue);
+    color: var(--green);
 }
 
 
@@ -49,8 +49,10 @@ nav ul a:hover{
     nav {
         display: flex;
         flex-direction: column;
-        line-height: 2;
+        line-height: 1.5;
         text-align: center;
+    }
+    nav ul a{ display:flex;
     }
 }
 
@@ -64,7 +66,7 @@ nav ul a:hover{
 
 h1{
     font-size: 60px;
-    color: var(--blue);
+    color: var(--green);
 }
 p{
     font-size: 18px;
@@ -74,7 +76,7 @@ p{
 }
 .btn,
 .left .btn{
-    background-color: var(--blue);
+    background-color: var(--green);
     display: flex;
     justify-content: center;
     width: 7vw;
@@ -109,7 +111,7 @@ img{
     .home {
         display: flex;
         flex-direction: column;
-        line-height: 2;
+        line-height: 1;
         padding: 50px;
         padding-top: 10px;
     }
@@ -129,7 +131,7 @@ h1{
 }
 .posts{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     margin-top: 50px;
     column-gap: 30px;
     row-gap: 20PX;
@@ -191,17 +193,7 @@ h1{
     justify-content: center;
     font-size: 2.5rem;
 }
-.social-icons{
-    display: flex;
-    justify-content: center;
-}
-.socials{
-    list-style: none;
-    display: flex;
-    font-size: 2rem;
-    padding: 1vh 1vw;
-    flex-direction: column;
-}
+
 form{
     display: flex;
     flex-direction: column;
@@ -224,7 +216,11 @@ textarea{
 }
 
 @media only screen and (max-width: 1000px) {
-    form{
+    .contact_form{ 
+      display: flex;
+      flex-direction:column;
+     }
+     form{
         padding: 0 20px;
     }
 }
@@ -241,7 +237,17 @@ footer nav{
     text-align: center;
     line-height: 2;
 }
-
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    padding: 1vh 1vw;
+    flex-direction: column;
+}
 .copy{
     text-align: center;
     margin: 20px;
